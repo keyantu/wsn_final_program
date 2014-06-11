@@ -1,0 +1,371 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\WSNtest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\WSNtest.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\connect.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\data.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\END_NOT.ico"
+IDI_ICON4               ICON    DISCARDABLE     "res\\END_OK.ico"
+IDI_ICON5               ICON    DISCARDABLE     "res\\home.ico"
+IDI_ICON6               ICON    DISCARDABLE     "res\\LY_NOT.ico"
+IDI_ICON7               ICON    DISCARDABLE     "res\\LY1.ico"
+IDI_ICON8               ICON    DISCARDABLE     "res\\LY2.ico"
+IDI_ICON9               ICON    DISCARDABLE     "res\\WG_NOT.ico"
+IDI_ICON10              ICON    DISCARDABLE     "res\\WG_OK.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 WSNtest"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "WSNtest 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_WSNTEST_DIALOG DIALOGEX 0, 0, 563, 309
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "无线传感网界面"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "串口通信",IDC_STATIC,7,7,114,57
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,13,13,25,25
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,135,20,414,275
+    GROUPBOX        "发送显示",IDC_STATIC,7,185,114,117
+    GROUPBOX        "接收显示",IDC_STATIC,7,67,114,110
+    COMBOBOX        IDC_COMB_PORT,64,18,48,66,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BAUD,64,40,48,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "串口号",IDC_STATIC,17,20,41,8
+    LTEXT           "波特率",IDC_STATIC,17,44,39,8
+    EDITTEXT        IDC_EDIT_SEND,17,203,96,65,ES_AUTOHSCROLL
+    PUSHBUTTON      "send",IDC_BTN_SEND,21,281,90,14
+    GROUPBOX        "我的界面",IDC_STATIC,130,7,426,295
+    LTEXT           "温度",IDC_STATIC,21,90,17,8
+    EDITTEXT        IDC_EDIT1,57,88,40,14,ES_AUTOHSCROLL
+    LTEXT           "湿度",IDC_STATIC,21,117,17,8
+    EDITTEXT        IDC_EDIT2,57,115,40,14,ES_AUTOHSCROLL
+    LTEXT           "光照",IDC_STATIC,21,145,17,8
+    EDITTEXT        IDC_EDIT3,57,143,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DLG_1HELLO DIALOGEX 0, 0, 215, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "欢迎^o^~"
+FONT 12, "System", 0, 0, 0x1
+BEGIN
+    CTEXT           "欢迎来到无线传感界面",IDC_STATIC_HELLO,14,14,187,26,
+                    SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "OK",IDOK,0,109,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,165,109,50,14
+    CONTROL         163,IDC_STATIC,"Static",SS_BITMAP,68,46,79,77
+END
+
+IDD_DLG_PORT DIALOG DISCARDABLE  0, 0, 301, 200
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "拓扑节点",IDC_STATIC,7,7,77,186
+    GROUPBOX        "组网表示",IDC_STATIC,84,7,210,186
+    LTEXT           "网关",IDC_STATIC,48,49,17,8
+    ICON            IDI_ICON10,IDC_WG,19,42,20,20
+    LTEXT           "路由1",IDC_STATIC,48,78,21,8
+    ICON            IDI_ICON7,IDC_LY1,19,75,20,20
+    LTEXT           "路由2",IDC_STATIC,48,107,21,8
+    ICON            IDI_ICON8,IDC_LY2,19,104,20,20
+    LTEXT           "终端节点",IDC_STATIC,48,136,33,8
+    ICON            IDI_ICON4,IDC_END,19,133,20,20
+    CONTROL         "",IDC_PWG,"Static",SS_BITMAP,170,44,11,11
+    CONTROL         "",IDC_PLY1,"Static",SS_BITMAP,129,106,11,11
+    CONTROL         "",IDC_PLY2,"Static",SS_BITMAP,208,105,11,11
+END
+
+IDD_DLG_DATA DIALOG DISCARDABLE  0, 0, 300, 201
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_TCHART1,"{B6C10489-FB89-11D4-93C9-006008A7EED4}",
+                    WS_TABSTOP,18,16,122,75
+    GROUPBOX        "温度显示",IDC_STATIC,7,7,143,92
+    GROUPBOX        "湿度显示",IDC_STATIC,150,7,143,92
+END
+
+IDD_DLG_SCENE DIALOG DISCARDABLE  0, 0, 301, 201
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "光照",IDC_BTN_LIT,25,32,50,14
+    PUSHBUTTON      "行动",IDC_BTN_FOOT,218,31,50,14
+    CONTROL         159,IDC_STATIC,"Static",SS_BITMAP,7,14,285,173
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "WSNtest Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "WSNtest\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "WSNtest.EXE\0"
+            VALUE "ProductName", "WSNtest 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_WSNTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 556
+        VERTGUIDE, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 302
+    END
+
+    IDD_DLG_PORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        VERTGUIDE, 84
+        VERTGUIDE, 132
+        VERTGUIDE, 150
+        VERTGUIDE, 175
+        VERTGUIDE, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+        HORZGUIDE, 100
+    END
+
+    IDD_DLG_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        VERTGUIDE, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+        HORZGUIDE, 99
+    END
+
+    IDD_DLG_SCENE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        VERTGUIDE, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+        HORZGUIDE, 100
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_WSNTEST_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+IDD_DLG_DATA DLGINIT
+BEGIN
+    IDC_TCHART1, 0x376, 359, 0
+0x0000, 0x0000, 0x5054, 0x3046, 0x540b, 0x6843, 0x7261, 0x4374, 0x6168, 
+0x7472, 0x0400, 0x654c, 0x7466, 0x0002, 0x5403, 0x706f, 0x0002, 0x5705, 
+0x6469, 0x6874, 0xf403, 0x0600, 0x6548, 0x6769, 0x7468, 0x9603, 0x1200, 
+0x6954, 0x6c74, 0x2e65, 0x6554, 0x7478, 0x532e, 0x7274, 0x6e69, 0x7367, 
+0x0601, 0x5408, 0x6565, 0x6843, 0x7261, 0x0074, 0x540d, 0x7469, 0x656c, 
+0x562e, 0x7369, 0x6269, 0x656c, 0x0608, 0x6956, 0x7765, 0x4433, 0x0008, 
+0x540f, 0x6146, 0x7473, 0x694c, 0x656e, 0x6553, 0x6972, 0x7365, 0x5307, 
+0x7265, 0x6569, 0x3073, 0x4d11, 0x7261, 0x736b, 0x412e, 0x7272, 0x776f, 
+0x654c, 0x676e, 0x6874, 0x0802, 0x4d0d, 0x7261, 0x736b, 0x562e, 0x7369, 
+0x6269, 0x656c, 0x0b08, 0x6553, 0x6972, 0x7365, 0x6f43, 0x6f6c, 0x0772, 
+0x6305, 0x526c, 0x6465, 0x4111, 0x7475, 0x536f, 0x6163, 0x656c, 0x6556, 
+0x7472, 0x7841, 0x7369, 0x0d08, 0x694c, 0x656e, 0x6550, 0x2e6e, 0x6f43, 
+0x6f6c, 0x0772, 0x6305, 0x526c, 0x6465, 0x5810, 0x6156, 0x756c, 0x7365, 
+0x442e, 0x7461, 0x5465, 0x6d69, 0x0865, 0x580c, 0x6156, 0x756c, 0x7365, 
+0x4e2e, 0x6d61, 0x0665, 0x5801, 0x580d, 0x6156, 0x756c, 0x7365, 0x4f2e, 
+0x6472, 0x7265, 0x0b07, 0x6f6c, 0x7341, 0x6563, 0x646e, 0x6e69, 0x1067, 
+0x5659, 0x6c61, 0x6575, 0x2e73, 0x6144, 0x6574, 0x6954, 0x656d, 0x0c08, 
+0x5659, 0x6c61, 0x6575, 0x2e73, 0x614e, 0x656d, 0x0106, 0x0d59, 0x5659, 
+0x6c61, 0x6575, 0x2e73, 0x724f, 0x6564, 0x0772, 0x6c06, 0x4e6f, 0x6e6f, 
+0x0065, 0x0000, 0x0000, 0x0000, 0x0002, 0x0000, 0xff00, 0xffff, "\377" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\hello.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\25_110428175231_1.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\u=344454903,3932137085&fm=21&gp=0.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 WSNtest(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\WSNtest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
